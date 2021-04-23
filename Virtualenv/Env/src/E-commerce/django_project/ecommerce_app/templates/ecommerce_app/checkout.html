@@ -1,0 +1,141 @@
+{% extends 'ecommerce_app/base.html' %} {% block title %} Checkout | {% endblock %} {% block content %}
+
+<div class="container">
+    <div class="row">
+
+        <h2>Checkout</h2>
+
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-radius: 20px;
+                margin: 10px;
+                padding: 10px;
+            }
+        </style>
+
+        <form action="" method="post">
+            <table style="border: 2px;">
+                {% csrf_token %} {{ form.as_table }}
+                <tr>
+                    <th>
+                        <label for="Op1"> Add Gift Options: </label>
+                    </th>
+                    <th>
+                        <input type="checkbox" id="Op1" value="AddGift">Check<br>
+                    </th>
+                </tr>
+                <tr>
+                    <th> Mode of Pay: <br></th>
+                    <th style="align-items: left;">
+                        <input type="radio" id="Op1" name="Pay" value="COD">
+                        <label for="Op1">Cash on Delivery</label><br>
+                        <input type="radio" id="Op2" name="Pay" value="Paytm">
+                        <label for="Op2">Paytm</label><br>
+                        <input type="radio" id="Op3" name="Pay" value="CreditCard">
+                        <label for="Op3">Credit Card</label><br>
+                        <input type="radio" id="Op4" name="Pay" value="DebitCard">
+                        <label for="Op4">Debit Card</label><br>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        Select Country
+                    </th>
+                    <th>
+                        <select id="country" name="country">
+                            <option value="Select">Select Country</option>
+                            <option value="Afganistan">Afghanistan</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands">Falkland Islands</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="India">India</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea North">Korea North</option>
+                            <option value="Korea Sout">Korea South</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syria">Syria</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Erimates">United Arab Emirates</option>
+                            <option value="United States of America">United States of America</option>
+                            <option value="Uraguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            
+                         </select>
+                    </th>
+                </tr>
+            </table><br><br>
+            <input type="submit" value="Place Order" style="margin-left: 250px;">
+        </form>
+    </div>
+</div>
+<link rel="stylesheet" href="/path/to/countrySelect.css">
+<script src="/path/to/cdn/jquery.min.js"></script>
+<script src="/path/to/countrySelect.js"></script>
+{% endblock %}

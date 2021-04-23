@@ -1,0 +1,18 @@
+{% extends 'ecommerce_app/base.html' %} {% block content %} {% load static %} {% static "media\products_images" as baseUrl %}
+<div class="container">
+    <div class="row">
+        <h2>Available Products</h2>
+
+        {% for product in all_products %}
+        <div class="col-lg-4">
+            <img src="{{baseUrl}}/{{product.img}}" style="height: 250px; width:400px; border-radius: 20px;" alt="My Image">
+            <h3><a href="{% url 'product_detail' product.pk product.slug %}">{{ product.name }}</a></h3>
+            <p>Price ${{ product.price }}</p>
+            <p>{{ product.description }}</p>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+{% endblock %}
