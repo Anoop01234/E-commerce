@@ -5,9 +5,9 @@
 
 ## How to Install:-
 - E-commerce website will be live soon.
-- 
+
 ## Contribution Guidelines:-
-- Contributions are always welcome! Please ensure your pull request adheres to the following guidelines:
+Contributions are always welcome! Please ensure your pull request adheres to the following guidelines:
    1. Alphabetize your entry.
    2. Search previous suggestions before making a new one, as yours may be a duplicate.
    3. Suggested READMEs should be beautiful or stand out in some way.
