@@ -21,7 +21,7 @@
 ## Contributor:-
    - Anoop Gupta, [Connect on LinkedIn](https://www.linkedin.com/in/anoop-gupta-2490a2144/ "LinkedIn URL")
 
-Copyright (c) [2020] [Team - HeraPheri]
+Copyright (c) [2020] 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
