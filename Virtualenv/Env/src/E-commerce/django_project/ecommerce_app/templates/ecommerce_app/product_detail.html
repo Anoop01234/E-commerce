@@ -1,10 +1,10 @@
-{% extends 'ecommerce_app/base.html' %} {% block title %} {{ product.name }} | {% endblock %} {% block content %} {% load static %} {% static "media\products_images" as baseUrl %}
+{% extends 'ecommerce_app/base.html' %} {% block title %} {{ product.name }} | {% endblock %} {% block content %} {% load static %}
 <div class="container">
     <div class="row">
 
         <p><a href="{% url 'index' %}">All Products </a> &gt; {{ product.name }}
         </p>
-        <img src="{{baseUrl}}/{{product.img}}" style="height: 250px; width:400px; border-radius: 20px;">
+        <img src="{{product.image.url}}" style="height: 250px; width:400px; border-radius: 20px;">
         <h2>{{ product.name }}</h2>
         <p>Price ${{ product.price }}</p>
         <p>{{ product.description }}</p>
