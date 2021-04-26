@@ -1,16 +1,31 @@
 {% extends 'ecommerce_app/base.html' %} {% block content %} {% load static %}
+<style>
+    th,
+    tr {
+        margin-top: 100px;
+        margin: 10px;
+        padding-top: 100px;
+        padding: 10px;
+    }
+</style>
 <div class="container">
     <div class="row">
-        <h2>Available Products</h2>
+        <h2 style="text-align: center;">📕📗📘 Available Books 📙📚📖 </h2>
+        <table>
+            <tr>
+                {% for product in all_products %}
+                <th>
+                    <div>
+                        <img src="{{product.image.url}}" style="height: 200px; width:150px; border-radius: 20px;" alt="My Image">
+                        <h3><a href="{% url 'product_detail' product.pk product.slug %}">{{ product.name }}</a></h3>
+                        <p>Price ${{ product.price }}</p>
+                        <p>{{ product.description }}</p>
+                    </div>
+                </th>
+                {% endfor %}
+            </tr>
+        </table>
 
-        {% for product in all_products %}
-        <div class="col-lg-4">
-            <img src="{{product.image.url}}" style="height: 250px; width:400px; border-radius: 20px;" alt="My Image">
-            <h3><a href="{% url 'product_detail' product.pk product.slug %}">{{ product.name }}</a></h3>
-            <p>Price ${{ product.price }}</p>
-            <p>{{ product.description }}</p>
-        </div>
-        {% endfor %}
 
     </div>
 </div>
