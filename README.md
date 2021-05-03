@@ -19,9 +19,6 @@ Contributions are always welcome! Please ensure your pull request adheres to the
    8. Check your spelling and grammar.
    9. Make sure your text editor is set to remove trailing whitespace.
 
-## Contributor:-
-   - Anoop Gupta: [Connect](https://github.com/Anoop01234)
-
 ## Copyright (c) [2020] 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
