@@ -19,7 +19,7 @@ Contributions are always welcome! Please ensure your pull request adheres to the
    9. Make sure your text editor is set to remove trailing whitespace.
 
 ## Contributor:-
-   - Anoop Gupta: [Connect on LinkedIn](https://www.linkedin.com/in/anoop-gupta-2490a2144/ "LinkedIn URL")
+   - Anoop Gupta: [Connect](https://github.com/Anoop01234)
 
 ## Copyright (c) [2020] 
 
