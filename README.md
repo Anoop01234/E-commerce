@@ -1,4 +1,5 @@
 # E-commerce | A user friendly application for shopping 
+# Django Project
 #### Front-end: HTML, CSS and Javascript
 #### Back-end: Django
 #### Database: Postgres
