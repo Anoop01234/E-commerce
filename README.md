@@ -3,7 +3,7 @@
 ## Django Project
 #### Front-end: HTML, CSS and Javascript
 #### Back-end: Django
-#### Database: Postgres
+#### Database: PostgreSQL
 
 ## How to run:-
 Steps:
