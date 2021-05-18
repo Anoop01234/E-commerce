@@ -1,11 +1,19 @@
 # E-commerce | A user friendly application for shopping 
-# Django Project
+
+## Django Project
 #### Front-end: HTML, CSS and Javascript
 #### Back-end: Django
 #### Database: Postgres
 
-## How to Install:-
-- E-commerce website will be live soon.
+## How to run:-
+Steps:
+1. Add your credentials of PostgreSQL server and database name in settigns.py
+2. Install Virtualenv, Django, pillow and psycopg2 using pip command
+3. In the terminal activate the environment
+4. Navigate to folder where you can find manage.py file
+5. Create a superuser to access admin side, using command "python manage.py createsuperuser" in terminal and enter credentials
+6. At last run the command "python manage.py runserver"
+7. To access admin side, in the url http://127.0.0.1:8000 add http://127.0.0.1:8000/admin and enter the superuser credentials
 
 ## Contribution Guidelines:-
 Contributions are always welcome! Please ensure your pull request adheres to the following guidelines:
