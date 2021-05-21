@@ -10,10 +10,12 @@ Steps:
 1. Add your credentials of PostgreSQL server and database name in settigns.py
 2. Install Virtualenv, Django, pillow and psycopg2 using pip command
 3. In the terminal activate the environment
-4. Navigate to folder where you can find manage.py file
-5. Create a superuser to access admin side, using command "python manage.py createsuperuser" in terminal and enter credentials
-6. At last run the command "python manage.py runserver"
-7. To access admin side, in the url http://127.0.0.1:8000 add http://127.0.0.1:8000/admin and enter the superuser credentials
+4. Activate the virtual environment
+5. In settings.py enter database credentials and database name
+6. Navigate where "manage.py" file is located and run command "python manage.py makemigrations", then "python manage.py migrate"
+7. Create a superuser to access admin side, using command "python manage.py createsuperuser" in terminal and enter credentials
+8. At last run the command "python manage.py runserver"
+9. To access admin side, in the url http://127.0.0.1:8000 add http://127.0.0.1:8000/admin and enter the superuser credentials
 
 ## Contribution Guidelines:-
 Contributions are always welcome! Please ensure your pull request adheres to the following guidelines:
